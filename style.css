@@ -1,0 +1,145 @@
+
+
+:root{
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-secondary: 'Open Sans', sans-serif;
+    
+    --fw-reg: 400;
+    --fw-bold: 700;
+
+    --clr-light: white;
+    --clr-dark: black;
+    --clr-accent: white;
+
+    --fs-h1: 3em;
+    --fs-h2: 2.25em;
+    --fs-h3: 1em;
+    --fs-body: 1em;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,0.25), 0.125em 0.125em 0.25em rgba(0,0,0,0.15) ;
+}
+
+body{
+
+    margin: 2em;
+    line-height: 1.6;
+    background: #f0ebfc;
+
+}
+
+h1{
+    font-family: var(--ff-primary);
+    font-size: 2em;
+
+    
+}
+
+p{
+    font-size: 1.1em;
+    font-family: var(--ff-secondary);
+}
+.topic{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+/*block*/
+
+.block{
+    box-sizing: border-box;
+    width: 160px;
+    padding:3px 18px;
+    margin: 5px;
+    border: 0.5px  solid #69617f;
+    border-radius: 20px;
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+    text-align: center;
+    
+    
+}
+
+.block:hover
+{
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+.head:hover,
+.prof:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-evenly;
+}
+.sub_content{
+    gap: 1em;
+    padding:0;
+    margin-top: -0.5em;
+    margin-right: 2em;
+    justify-content:space-evenly;
+    background: black;
+    height: 120px;
+    width: 350px;
+    color: white;
+
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: justify;
+    height: 35px;
+    width: 250px;
+    margin: 0.8em;
+    font-family: var(--ff-primary);
+    font-size: 25px; 
+    background: black;
+}
+.img:hover{
+    transform: scale(1.1);
+}
+
+.sub{
+
+    margin-top: 2em;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    width:390px;
+    border-radius: 0.5em;
+    background: black;
+    
+}
+
+.img{
+    width:390px;
+    height: 150px;
+
+}
+
+.prof{
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    border: 1px solid #424242;
+    border-radius: 0.2em;
+    background-color: #424242;
+    margin-left: 1.3em;
+    text-align: justify;
+    padding-left: 0.5em;
+    font-family: 'Abel', sans-serif;
+
+    
+}
+
+
